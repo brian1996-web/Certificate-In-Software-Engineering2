@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/form.css"/>
+  <title>GENQ</title>
+</head>
+<body>
+  <section class="section-cta">
+    <div class="container">
+      <div class="cta">
+        <div class="cta-text-box">
+         <p class="heading-secondary">
+         <h1 class="kyc"> GENQ KYC FORM</h1>
+        </p>
+
+          
+          <form
+          class=" "
+          name="signupform"
+            action="#"
+            id="formsignup"
+            onsubmit="return Validate(event);"
+            method="POST"
+          >
+            <!-- action=# takes data to the backend -->
+
+            
+            <div><h1>Bio data</h1></div>
+            <div class="cta-form">
+              <div>
+              <label for="firstname">First Name </label>
+              <input
+                id="firstname"
+                type="text"
+                name="firstname"
+                placeholder="  Milner"
+              />
+            <span id="firstNameError" class="organize"></span>
+          </div>
+
+          <div>
+            <label for="lastname">Last Name </label>
+            <input
+              id="lastname"
+              type="text"
+              name="lastname"
+              placeholder="James"
+            />
+          <span id="errorlastName" class="organize"></span>
+        </div>
+
+        <div>
+          <label for="date">Date Of Birth </label>
+          <input
+            id="date"
+            type="date"
+            name="date"
+            placeholder=""
+          />
+        <span id="dateError" class="organize"></span>
+      </div>
+
+      <div>
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender">
+          <option value="">Select gender </option value="">
+          <option value="Male"> Male</option> 
+          <option value="Female">Female </option>
+          </select>
+        <span id="genderError"class="organize"></span>
+      </div>
+
+          </div>
+            
+           <div><h1>Location</h1></div>
+          <div class="cta-form">
+            <div>
+            <label for="country">Country </label>
+            <input
+              id="country"
+              type="text"
+              name="country"
+              placeholder=" eg Uganda"
+            />
+          <span id="countryError" class="organize"></span>
+        </div>
+
+         <div>
+          <label for="state">State/District</label>
+          <input
+            id="state"
+            type="text"
+            name="state"
+            placeholder="eg kampala"
+          />
+        <span id="stateError" class="organize"></span>
+      </div>
+ 
+      <div>
+        <label for="town">Town</label>
+        <input
+          id="town"
+          type="town"
+          name="town"
+          placeholder=""
+        />
+      <span id="townError" class="organize"></span>
+    </div>
+
+    <div>
+        <label for="zip">Zip Code</label>
+        <input
+          id="zip"
+          type="number"
+          name="zip"
+          placeholder=""
+        />
+      <span id="zipError" class="organize"></span>
+    </div>
+        </div>
+
+        <div><h1>Contact and Address</h1></div>
+        <div class="cta-form">
+          <div>
+          <label for="phone">Phone Number 1 </label>
+          <input
+            id="phone"
+            type="text"
+            name="phone"
+            placeholder="  +256"
+          />
+        <span id="phoneError" class="organize"></span>
+      </div>
+
+      
+
+    <!-- <div>
+      <label for="phon">Phone Number 2 </label>
+      <input
+        id="phon"
+        type="text"
+        name="phon"
+        placeholder="  +256"
+      />
+    <span id="phonError" class="organize"></span>
+  </div> -->
+
+    <!-- <div>
+      <label for="email">Email </label>
+      <input
+        id="email"
+        type="email"
+        name="email"
+        placeholder=""
+      />
+    <span id="emailError" class="organize"></span>
+
+  </div> -->
+</div>
+
+
+      <div>
+        <button class="btn btn--form" id="bottom-button" type="submit">Submit</button>
+       </div>
+   
+      </form>
+        </div>
+      </div> 
+       
+
+
+    </div> -->
+  </section>
+
+
+  <script src="../js/index.js"></script>
+
+</body>
+</html>

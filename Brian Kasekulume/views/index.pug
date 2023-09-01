@@ -1,0 +1,90 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='../css/form.css')
+  title GENQ
+section.section-cta
+  .container
+    .cta
+      .cta-text-box
+        p.heading-secondary
+        h1.kyc  GENQ KYC FORM
+        p
+        form#formsignup(name='signupform' action='/api/regtest' onsubmit='return Validate(event);' method='POST')
+          // action=# takes data to the backend
+          div
+            h1 Bio data
+          .cta-form
+            div
+              label(for='firstname') First Name 
+              input#firstname(type='text' name='firstname' placeholder='  Milner')
+              span#firstNameError.organize
+            div
+              label(for='lastname') Last Name 
+              input#lastname(type='text' name='lastname' placeholder='James')
+              span#errorlastName.organize
+            div
+              label(for='date') Date Of Birth 
+              input#date(type='date' name='date' placeholder='')
+              span#dateError.organize
+            div
+              label(for='gender') Gender
+              select#gender(name='gender')
+                option(value='') Select gender 
+                option(value='Male')  Male
+                option(value='Female') Female 
+              span#genderError.organize
+          div
+            h1 Location
+          .cta-form
+            div
+              label(for='country') Country 
+              input#country(type='text' name='country' placeholder=' eg Uganda')
+              span#countryError.organize
+            div
+              label(for='state') State/District
+              input#state(type='text' name='state' placeholder='eg kampala')
+              span#stateError.organize
+            div
+              label(for='town') Town
+              input#town(type='town' name='town' placeholder='')
+              span#townError.organize
+            div
+              label(for='zip') Zip Code
+              input#zip(type='number' name='zip' placeholder='')
+              span#zipError.organize
+          div
+            h1 Contact and Address
+          .cta-form
+            div
+              label(for='phone') Phone Number 1 
+              input#phone(type='text' name='phone' placeholder='  +256')
+              span#phoneError.organize
+            //
+              <div>
+              <label for="phon">Phone Number 2 </label>
+              <input
+              id="phon"
+              type="text"
+              name="phon"
+              placeholder="  +256"
+              />
+              <span id="phonError" class="organize"></span>
+              </div>
+            //
+              <div>
+              <label for="email">Email </label>
+              <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder=""
+              />
+              <span id="emailError" class="organize"></span>
+              </div>
+          div
+            button#bottom-button.btn.btn--form(type='submit') Submit
+  |  --&gt;
+script(src='../js/index.js')
